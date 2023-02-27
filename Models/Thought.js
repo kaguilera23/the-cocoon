@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose')
+const {Schema, model} = require("mongoose")
 
 const thoughtSchema = new Schema(
     {
@@ -10,7 +10,7 @@ const thoughtSchema = new Schema(
         },
         createdAt: {
             type: Date, 
-            default: Date.now
+            default: Date.now //use a getter method to format the timestamp on query
         },
         //the user that created this thought
         username: {
