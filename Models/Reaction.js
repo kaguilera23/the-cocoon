@@ -1,4 +1,4 @@
-const {Schema, model} = require("mongoose")
+const {Schema} = require("mongoose")
 
 //this is not a model, will be used as reaction schema in Thought Model
 const reactionSchema = new Schema(
@@ -22,3 +22,5 @@ const reactionSchema = new Schema(
           }
     }
 )
+
+module.exports = reactionSchema;
