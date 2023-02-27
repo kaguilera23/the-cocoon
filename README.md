@@ -6,6 +6,11 @@ Technology is a beautiful thing. It allows us to make friends from all over the 
 
 ## Installation
 
+First, ensure you have Node.js installed on your computer. Then open your code editor and proceed to the command line to download these npm libraries
+
+- express  ```npm i express```
+- mongoose  ```npm i mongoose```
+
 ## Usage
 
 ## Bugs
