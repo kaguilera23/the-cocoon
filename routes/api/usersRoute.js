@@ -6,14 +6,12 @@ const {
     updateUser,
     deleteUser
 } = require("../../controllers/userController")
-// /api/users/all-users
-// GET all users
-// POST a new user
+
+// /api/users/
 router.route("/").get(getUsers).post(createUser)
 
+// /api/users/:userId
 // GET a user by _id and populated thought and friend data
-// PUT to update a user by its _id
-// DELETE to remove a user by its _id
 router.route("/:userId").get(getSingleUser).put(updateUser).delete(deleteUser)
 
 // /api/users/:userID/friends/:friendId
