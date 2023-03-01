@@ -11,6 +11,11 @@ First, ensure you have Node.js installed on your computer. Then open your code e
 - express  ```npm i express```
 - mongoose  ```npm i mongoose```
 
-## Usage
+Insert data into the database using the model schemas provided, then you're able to retrieve all the data you've input, update it, and delete it whenever you need to!
 
-## Bugs
+![Example GET Users](./assets/images/Screenshot%20(13).png)
+![Example GET Thoughts](./assets/images/Screenshot%20(14).png)
+
+## Link
+
+<a href = "https://drive.google.com/file/d/1-8TuJgn_6B0JHndbJSXFUoddVqh3wsQI/view">Walkthrough The Cocoon</a>
