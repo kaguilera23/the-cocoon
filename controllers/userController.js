@@ -3,6 +3,7 @@ const User = require("../models/User")
 module.exports = {
     getUsers(req, res) {
         User.find({})
+        .select("-__v")
         .then((data) => {
             res.json(data)
         })
@@ -19,6 +20,9 @@ module.exports = {
         User.findOne({
             _id: req.params.userId
         })
+        .populate({path: "thoughts"})
+        .populate({path: "friends"})
+        .select("-__v")
         .then((data) => {
             res.json(data)
         })

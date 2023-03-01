@@ -14,9 +14,4 @@ router.route("/").get(getUsers).post(createUser)
 // GET a user by _id and populated thought and friend data
 router.route("/:userId").get(getSingleUser).put(updateUser).delete(deleteUser)
 
-// /api/users/:userID/friends/:friendId
-router.get("/:userId/friends/:friendId", (req, res) => {
-    res.send(`you're looking at ${req.params.userId}'s friends, specifically ${req.params.friendId}`)
-})
-
 module.exports = router;
